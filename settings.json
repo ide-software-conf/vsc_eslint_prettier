@@ -1,0 +1,123 @@
+{
+  // workbench
+  "workbench.colorTheme": "Monokai",
+  "workbench.startupEditor": "newUntitledFile", //"none"
+  // edditor
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  // "editor.codeActionsOnSave": true,
+  // "editor.formatOnPaste": true,
+  // "editor.renderControlCharacters": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //让函数(名)和后面的括号之间加个空格
+  "search.exclude": {
+    "**/dist": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/yarn.lock": true,
+    "**/tmp": true
+  },
+  "files.exclude": {
+    "node_modules": true
+  },
+  // formater
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "[html]": {
+  //   "editor.defaultFormatter": "vscode.jake"
+  // },
+  // "[jsonc]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // proxy
+  "http.proxyStrictSSL": false,
+  "http.proxy": "http://username:password@proxynj.xxx.com:8080/",
+  // 每次保存的时候将代码按eslint格式进行修复
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "vue",
+    "html",
+    "jsx",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "todo-tree.highlights.enabled": false,
+  "eslint.migration.2_x": "off",
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "C_Cpp.updateChannel": "Insiders",
+  "files.autoGuessEncoding": true,
+  "todo-tree.tree.showScanModeButton": false,
+  "extensions.ignoreRecommendations": false,
+  "emmet.triggerExpansionOnTab": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "window.zoomLevel": 0,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.maxMemoryForLargeFilesMB": 8096,
+  "[nunjucks]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "vscode-great-icons",
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "python.showStartPage": false,
+  "workbench.editor.enablePreview": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.ignoreWindowsGit27Warning": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.enabled": false
+  //prettier
+  //"prettier.semi": false, //去掉代码结尾的分号
+  //"prettier.singleQuote": true, //使用单引号替代双引号
+  //"prettier.trailingComma": "all", // 尽可能控制尾随逗号的打印
+  // "prettier.jsxBracketSameLine": true, //将>多行JSX元素放在最后一行的末尾，而不是单独放在下一行
+  //vetur
+  // "http.proxy": "127.0.0.1:8080",
+}

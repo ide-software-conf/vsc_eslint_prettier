@@ -1,2 +1,2 @@
-# vsc_eslint_prettier
-vscode, eslint, prettier config.
+# vsc-config
+The best config of vscode, eslit, prettier.

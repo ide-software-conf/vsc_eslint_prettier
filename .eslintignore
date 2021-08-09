@@ -1,0 +1,8 @@
+root = true
+
+/dist/
+test/*
+/.git
+/.vscode
+node_modules
+coverage

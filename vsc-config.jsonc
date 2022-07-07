@@ -1,0 +1,64 @@
+{
+  // workbench
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.startupEditor": "newUntitledFile", //"none"
+  // edditor
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  // "editor.formatOnSave": true,
+  // "editor.formatOnPaste": true,
+  // "editor.renderControlCharacters": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //让函数(名)和后面的括号之间加个空格
+  "search.exclude": {
+    "**/dist": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/yarn.lock": true,
+    "**/tmp": true
+  },
+  "files.exclude": {
+    "node_modules": true
+  },
+  "files.eol": "\n",
+  // formater
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "[html]": {
+  //   "editor.defaultFormatter": "vscode.jake"
+  // },
+  // "[jsonc]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  //eslint
+  "eslint.autoFixOnSave": true, //每次保存的时候将代码按eslint格式进行修复
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "html",
+    "jsx",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ]
+  //prettier
+  //"prettier.semi": false, //去掉代码结尾的分号
+  //"prettier.singleQuote": true, //使用单引号替代双引号
+  //"prettier.trailingComma": "all", // 尽可能控制尾随逗号的打印
+  // "prettier.jsxBracketSameLine": true, //将>多行JSX元素放在最后一行的末尾，而不是单独放在下一行
+  //vetur
+}

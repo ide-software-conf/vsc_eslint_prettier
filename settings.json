@@ -1,11 +1,13 @@
 {
   // workbench
   "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "vscode-great-icons",
   "workbench.startupEditor": "newUntitledFile", //"none"
   // edditor
   "editor.fontSize": 12,
   "editor.tabSize": 2,
   "files.eol": "\n",
+  // "editor.formatOnSave": true,
   // "editor.codeActionsOnSave": true,
   // "editor.formatOnPaste": true,
   // "editor.renderControlCharacters": true,
@@ -40,7 +42,10 @@
   // proxy
   "http.proxyStrictSSL": false,
   "http.proxy": "http://username:password@proxynj.xxx.com:8080/",
+
+  // eslint
   // 每次保存的时候将代码按eslint格式进行修复
+  // "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",
     "typescript",
@@ -73,7 +78,6 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
   "window.zoomLevel": 0,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -96,15 +100,7 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]"
-  ],
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "XXX", "[ ]", "[x]"],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

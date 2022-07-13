@@ -39,7 +39,7 @@ module.exports = {
     // "no-undef": "error", //[已包含]不允许未声明的变量
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used' }], //不允许有声明后未使用的变量或者参数
     'no-tabs': 'error', //不允许tabs
-    indent: ['error', 2], //缩进风格
+    indent: ['error', 2, { SwitchCase: 1 }], //缩进风格
     quotes: ['error', 'single'], //强制使用单引号
     semi: ['error', 'never'], //强制不使用分号结尾
     'no-multi-spaces': 'error',

@@ -1,17 +1,32 @@
 {
   // workbench
   "workbench.colorTheme": "Monokai",
+  "workbench.startupEditor": "none", //"newUntitledFile"
+  "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-great-icons",
-  "workbench.startupEditor": "newUntitledFile", //"none"
+  "extensions.ignoreRecommendations": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.enabled": false,
+
   // edditor
   "editor.fontSize": 12,
   "editor.tabSize": 2,
-  "files.eol": "\n",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
   // "editor.formatOnSave": true,
-  // "editor.codeActionsOnSave": true,
   // "editor.formatOnPaste": true,
   // "editor.renderControlCharacters": true,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //让函数(名)和后面的括号之间加个空格
+  // "editor.codeActionsOnSave": true,
+  "files.maxMemoryForLargeFilesMB": 8096,
+  "files.autoGuessEncoding": true,
+  "files.eol": "\n",
+  "files.exclude": {
+    "node_modules": true
+  },
+  "files.associations": {
+    "*.tpl": "nunjucks"
+  },
   "search.exclude": {
     "**/dist": true,
     "**/.git": true,
@@ -21,31 +36,24 @@
     "**/.idea": true,
     "**/.vscode": false,
     "**/yarn.lock": true,
+    "**/package-lock.json": true,
     "**/tmp": true
   },
-  "files.exclude": {
-    "node_modules": true
-  },
-  // formater
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // "[html]": {
-  //   "editor.defaultFormatter": "vscode.jake"
-  // },
-  // "[jsonc]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
-  // proxy
-  "http.proxyStrictSSL": false,
-  "http.proxy": "http://username:password@proxynj.xxx.com:8080/",
+
+  // others
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.ignoreWindowsGit27Warning": true,
+
+  // sync
+  "sync.gist": "9c3d88eb51650b10f44e4e72ebf1fdc0",
 
   // eslint
-  // 每次保存的时候将代码按eslint格式进行修复
   // "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.migration.2_x": "off",
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
   "eslint.validate": [
     "javascript",
     "typescript",
@@ -62,58 +70,96 @@
       "autoFix": true
     }
   ],
-  "[jsonc]": {
+
+  // formater
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //让函数(名)和后面的括号之间加个空格
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "todo-tree.highlights.enabled": false,
-  "eslint.migration.2_x": "off",
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "C_Cpp.updateChannel": "Insiders",
-  "files.autoGuessEncoding": true,
-  "todo-tree.tree.showScanModeButton": false,
-  "extensions.ignoreRecommendations": false,
-  "emmet.triggerExpansionOnTab": true,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "eslint.alwaysShowStatus": true,
-  "window.zoomLevel": 0,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[yaml]": {
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.maxMemoryForLargeFilesMB": 8096,
-  "[nunjucks]": {
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.iconTheme": "vscode-great-icons",
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
+  "[nunjucks]": {
+    "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
   },
-  "python.showStartPage": false,
-  "workbench.editor.enablePreview": false,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
   },
-  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "XXX", "[ ]", "[x]"],
+  "[nginx]": {
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+  },
+
+  // yaml
+  "yaml.disableAdditionalProperties": true,
+
+  // emmet
+  "emmet.triggerExpansionOnTab": true,
+
+  // todo-tree
+  "todo-tree.tree.showScanModeButton": false,
+  "todo-tree.highlights.enabled": false,
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "git.ignoreWindowsGit27Warning": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "security.workspace.trust.enabled": false
-  //prettier
-  //"prettier.semi": false, //去掉代码结尾的分号
-  //"prettier.singleQuote": true, //使用单引号替代双引号
-  //"prettier.trailingComma": "all", // 尽可能控制尾随逗号的打印
-  // "prettier.jsxBracketSameLine": true, //将>多行JSX元素放在最后一行的末尾，而不是单独放在下一行
-  //vetur
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+
+  // nunjucks
+  "nunjucksFormat.frontMatterData": false,
+
+  // vetur
   // "http.proxy": "127.0.0.1:8080",
+
+  // CPP
+  "C_Cpp.clang_format_style": "LLVM",
+  "C_Cpp.updateChannel": "Insiders",
+  "go.gopath": "",
+  "gopls": {
+    "experimentalWorkspaceModule": true // 解决报错: gopls requires a module at the root of your workspace
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "go.autocompleteUnimportedPackages": true,
+
+  // huawei
+  "WeCode.InstallPath": "d:\\WeCode",
+  "WeCode.GitPath": "D:\\software\\git\\anzhuang\\cmd\\git.exe",
+
+  // new incommings
+  "redhat.telemetry.enabled": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "projectManager.showParentFolderInfoOnDuplicates": true,
+  "projectManager.openInCurrenWindowIfEmpty": "never"
 }

@@ -1,0 +1,6 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-egg": "^7.1.0"
+  }
+}
